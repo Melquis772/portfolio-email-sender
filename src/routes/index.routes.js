@@ -4,6 +4,10 @@ const config = require('../config')
 
 const router = Router();
 
+router.get('/', (req, res) => {
+    res.send("works")
+})
+
 router.post('/send-email', async (req, res) => {
     const { name, email, message } = req.body;
 
