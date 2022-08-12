@@ -52,7 +52,7 @@ router.post('/send-email', async (req, res) => {
             })
         } else {
             res.status(403).json({
-                message: "All fields have to be filled"
+                message: "Email could not be sent. All fields have to be filled"
             })
         }
 
